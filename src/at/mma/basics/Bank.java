@@ -9,7 +9,7 @@ public class Bank {
         Scanner scanner = new Scanner(System.in);
 
         int auswahl;
-1
+
         // Menü anzeigen
         System.out.println("1. Einzahlen");
         System.out.println("2. Abheben");
