@@ -12,13 +12,13 @@ public class testit {
         String[] nameListe ={"Nussnuggat","Nuggat","Caramell","Schoko","Milky"};
         String[] farbeListe ={"schwarz","grau","weiß","braun","lecker"};
 
-        for (int i = 1; i<=1; i++) {
+        for (int i = 1; i<=100; i++) {
             //int randomNumber = random.next.Int(max + 1 -main) +min;
-            int ch = r.nextInt(charListe.length-1-0)+0;
-            int ob = r.nextInt(oberListe.length-1-0)+0;
-            int na = r.nextInt(nameListe.length-1-0)+0;
-            int fa = r.nextInt(farbeListe.length-1-0)+0;
-            int al = r.nextInt(25+1-0)+0;
+            int ch = r.nextInt(charListe.length - 1);
+            int ob = r.nextInt(oberListe.length - 1);
+            int na = r.nextInt(nameListe.length - 1);
+            int fa = r.nextInt(farbeListe.length - 1);
+            int al = r.nextInt(25 + 1);
             mKatzenListe.add(new Katze(charListe[ch],oberListe[ob],al,farbeListe[fa],nameListe[na]));
         }
 
