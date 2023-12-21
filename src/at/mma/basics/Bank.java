@@ -10,7 +10,6 @@ public class Bank {
 
         int auswahl;
 
-        // Menü anzeigen
         System.out.println("1. Einzahlen");
         System.out.println("2. Abheben");
         System.out.println("3. Kontostand");
@@ -18,10 +17,8 @@ public class Bank {
         System.out.print("Bitte wählen Sie eine Option: ");
 
         do {
-            // Benutzereingabe lesen
             auswahl = scanner.nextInt();
 
-            // Aktion entsprechend der Benutzerauswahl ausführen
             switch (auswahl) {
                 case 1:
                     einzahlen();
@@ -49,7 +46,7 @@ public class Bank {
         System.out.print("Geben Sie den Einzahlungsbetrag ein: ");
         double betrag = scanner.nextDouble();
         if (betrag > 0) {
-            kontostand = kontostand + betrag; // Hier wird der Kontostand korrekt aktualisiert
+            kontostand = kontostand + betrag;
             System.out.println("Einzahlung erfolgreich. Neuer Kontostand: " + kontostand);
         } else {
             System.out.println("Ungültiger Betrag. Einzahlung fehlgeschlagen.");
