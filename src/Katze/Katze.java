@@ -1,7 +1,6 @@
 package Katze;
-
 public class Katze {
-    private String charakter;
+    private String character;
     private String oberflaechenbeschaffenheit;
     private int alter;
     private String farbe;
@@ -9,19 +8,21 @@ public class Katze {
 
     public Katze() {
     }
-    public Katze(String charakter, String oberflaechenbeschaffenheit, int alter, String farbe, String name) {
-        this.charakter = charakter;
+
+    public Katze(String character, String oberflaechenbeschaffenheit, int alter, String farbe, String name) {
+        this.character = character;
         this.oberflaechenbeschaffenheit = oberflaechenbeschaffenheit;
         this.alter = alter;
         this.farbe = farbe;
         this.name = name;
     }
-    public String getCharakter() {
-        return charakter;
+
+    public String getCharacter() {
+        return character;
     }
 
-    public void setCharakter(String charakter) {
-        this.charakter = charakter;
+    public void setCharacter(String character) {
+        this.character = character;
     }
 
     public String getOberflaechenbeschaffenheit() {
@@ -54,5 +55,13 @@ public class Katze {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public void getInfo() {
+        System.out.println("Name der Katze " + this.name +
+                ", Farbe: " + this.farbe +
+                ", Oberfläche: " + this.oberflaechenbeschaffenheit +
+                ", Alter: " + this.alter +
+                ", Charakter: " + this.character);
     }
 }
